@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form action="https://www.google.com/search">
+            <!-- All these words -->
+            <div class="search-row">
+                <span>Find pages with all these words:</span>
+                <input type="text" name="as_q" placeholder="Enter words here">
+            </div>
+
+            <!-- Exact word or phrase -->
+            <div class="search-row">
+                <span>Find pages with this exact word or phrase:</span>
+                <input type="text" name="as_epq" placeholder="Enter phrase here">
+            </div>
+
+            <!-- Any of these words -->
+            <div class="search-row">
+                <span>Find pages with any of these words:</span>
+                <input type="text" name="as_oq" placeholder="Enter words here">
+            </div>
+
+            <!-- None of these words -->
+            <div class="search-row">
+                <span>Find pages with none of these words:</span>
+                <input type="text" name="as_eq" placeholder="Enter words here">
+            </div>
+
+            <input type="submit" value="Advanced Search">
+        </form>
+        <a href="index.html">Back to Google Search</a> | <a href="image.html">Image Search</a>
+    </body>
+</html>

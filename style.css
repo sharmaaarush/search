@@ -1,0 +1,71 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #202124;
+}
+
+/* Form container */
+form {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual search row (text + input) */
+.search-row {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Text (description) next to the input field */
+.search-row span {
+    flex: 1;
+    font-size: 16px;
+    font-weight: normal;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+/* Input field */
+.search-row input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+/* Submit button */
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect on the submit button */
+input[type="submit"]:hover {
+    background-color: #357ae8;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #1a73e8;
+}
+
+a:hover {
+    text-decoration: underline;
+}
