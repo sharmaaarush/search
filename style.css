@@ -1,50 +1,61 @@
 /* General body styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #202124;
 }
 
-/* Form container */
-form {
-    width: 50%;
-    margin: 50px auto;
+/* Center the content and add some padding */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Individual search row (text + input) */
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Search row (text + input) */
 .search-row {
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-/* Text (description) next to the input field */
+/* Text next to the input field */
 .search-row span {
-    flex: 1;
     font-size: 16px;
-    font-weight: normal;
-    margin-right: 10px;
-    white-space: nowrap;
+    color: #555;
 }
 
 /* Input field */
 .search-row input {
-    width: 300px;
+    width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #dcdcdc;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input field focus effect */
+.search-row input:focus {
+    border-color: #4285f4;
+    outline: none;
 }
 
 /* Submit button */
 input[type="submit"] {
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     background-color: #4285f4;
@@ -52,20 +63,54 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Hover effect on the submit button */
+/* Submit button hover effect */
 input[type="submit"]:hover {
     background-color: #357ae8;
 }
 
-/* Links */
+/* "I'm Feeling Lucky" button */
+button[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    color: #4285f4;
+    border: 1px solid #4285f4;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for "I'm Feeling Lucky" button */
+button[type="button"]:hover {
+    background-color: #f1f1f1;
+}
+
+/* Links styling */
 a {
     text-decoration: none;
+    color: #4285f4;
     font-size: 14px;
-    color: #1a73e8;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    .search-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-row input {
+        width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
 }
