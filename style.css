@@ -1,4 +1,3 @@
-/* General body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -7,7 +6,6 @@ body {
     color: #202124;
 }
 
-/* Center the content and add some padding */
 .container {
     width: 100%;
     max-width: 800px;
@@ -18,27 +16,23 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Form styling */
 form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* Search row (text + input) */
 .search-row {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* Text next to the input field */
 .search-row span {
     font-size: 16px;
     color: #555;
 }
 
-/* Input field */
 .search-row input {
     width: 100%;
     padding: 10px;
@@ -48,13 +42,11 @@ form {
     transition: border-color 0.3s ease;
 }
 
-/* Input field focus effect */
 .search-row input:focus {
     border-color: #4285f4;
     outline: none;
 }
 
-/* Submit button */
 input[type="submit"] {
     padding: 10px 20px;
     font-size: 16px;
@@ -66,12 +58,10 @@ input[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-/* Submit button hover effect */
 input[type="submit"]:hover {
     background-color: #357ae8;
 }
 
-/* "I'm Feeling Lucky" button */
 button[type="button"] {
     padding: 10px 20px;
     font-size: 16px;
@@ -83,12 +73,10 @@ button[type="button"] {
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect for "I'm Feeling Lucky" button */
 button[type="button"]:hover {
     background-color: #f1f1f1;
 }
 
-/* Links styling */
 a {
     text-decoration: none;
     color: #4285f4;
@@ -99,7 +87,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Responsive design adjustments */
 @media (max-width: 600px) {
     .search-row {
         flex-direction: column;
